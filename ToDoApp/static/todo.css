@@ -1,0 +1,130 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+}
+
+#main{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 10%;
+}
+
+#logout_btn{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    right: 0%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#logout_btn:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+#welcome{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(185, 185, 185);
+}
+
+
+#add{
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    top: 10%;
+    background-color: rgb(185, 185, 185);
+}
+
+#add_btn{
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    right: 5%;
+    border-radius: 5px;
+    background-color: rgb(5, 240, 5);
+}
+
+#add_btn:hover{
+    background-color: rgb(78, 250, 78);
+}
+
+#to_be_done{
+    position: absolute;
+    height: 85%;
+    width: 50%;
+    top: 15%;
+    background-color: rgb(185, 185, 185);
+}
+
+#done{
+    position: absolute;
+    height: 85%;
+    width: 50%;
+    top: 15%;
+    left: 50%;
+    background-color: rgb(185, 185, 185);
+}
+
+.task_done_{
+    position: relative;
+    color: green;
+    font-size: xx-large;
+    font-weight: bold;
+    left: 10%;
+    word-wrap: break-word;
+}
+
+.task_to_be_done_{
+    position: relative;
+    color: red;
+    font-size: xx-large;
+    font-weight: bold;
+    left: 5%;
+    word-wrap: break-word;
+}
+
+.task_done_btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 4vh;
+    width: 4vh;
+    background-image: url('cross.jpg');
+    background-size: cover;
+}
+
+.task_to_be_done_btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 4vh;
+    width: 4vh;
+    background-image: url('tick.jpg');
+    background-size: cover;
+}
+
+.delete_task_btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 4vh;
+    width: 4vh;
+    background-image: url('delete.png');
+    background-size: cover;
+}
+
+#adding_task{
+    position: absolute;
+    right: 5%;
+}

@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="{% static 'todo.css' %}">
+</head>
+<body>
+    <div id="navbar">
+        <form action="logout_handle">
+            <input type="submit" value="logout" id="logout_btn">
+        </form>
+    </div>
+    <div id="main">
+        <div id="welcome">
+            <h1 align="center">{{name}}'s ToDo List</h1>
+        </div>
+        <div id="add">
+            {{add_task|safe}}
+        </div>
+        <div id="to_be_done">
+            <u><h2 align="center">Task To Be Done</h2></u>
+            {{task_to_be_done|safe}}
+        </div>
+        <div id="done">
+            <u><h2 align="center">Task Done</h2></u>
+            {{task_done|safe}}
+        </div>
+    </div>
+</body>
+</html>
